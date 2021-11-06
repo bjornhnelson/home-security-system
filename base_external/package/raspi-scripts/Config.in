@@ -1,0 +1,4 @@
+config BR2_PACKAGE_RASPI_SCRIPTS
+	bool "raspi-scripts"
+	help
+	  Includes the camera driver scripts for Raspberry Pi.
