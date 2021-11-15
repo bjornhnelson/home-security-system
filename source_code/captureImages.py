@@ -1,4 +1,4 @@
-from time import sleep
+""" from time import sleep
 from picamera import PiCamera
 import sys
 
@@ -12,4 +12,9 @@ for i in range(0, 3):
     sleep(5)
     camera.capture('/root/photos/image%s.jpg' % i)
     
-camera.stop_preview()
+camera.stop_preview() """
+
+import subprocess
+
+cmd = "raspstill -o cur_pic.jpeg"
+subprocess.call(cmd, shell=True)

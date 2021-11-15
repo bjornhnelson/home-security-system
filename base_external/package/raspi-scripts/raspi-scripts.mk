@@ -16,6 +16,8 @@ define RASPI_SCRIPTS_INSTALL_TARGET_CMDS
     $(INSTALL) -m 0755 $(@D)/Makefile $(TARGET_DIR)/root/
 	$(INSTALL) -m 0755 $(@D)/hello.c $(TARGET_DIR)/root/
 	$(INSTALL) -m 0755 $(@D)/captureImages.py $(TARGET_DIR)/root/
+	$(INSTALL) -m 0755 $(@D)/main.py $(TARGET_DIR)/root/
+	$(INSTALL) -m 0755 $(@D)/pub.py $(TARGET_DIR)/root/
 endef
 
 $(eval $(generic-package))
