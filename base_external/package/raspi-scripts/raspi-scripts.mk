@@ -1,7 +1,7 @@
 # RasPi Package
 
-RASPI_SCRIPTS_VERSION = 'ab34281e7e6ee9ac53e56e8a32855b6c1c381e9b'
 RASPI_SCRIPTS_SITE = git@github.com:cu-ecen-aeld/final-project-support-bjorn-mehul.git
+RASPI_SCRIPTS_VERSION = $(shell git ls-remote $(RASPI_SCRIPTS_SITE) HEAD | cut -f1)
 RASPI_SCRIPTS_SITE_METHOD = git
 RASPI_SCRIPTS_GIT_SUBMODULES = YES
 
